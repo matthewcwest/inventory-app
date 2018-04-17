@@ -1,0 +1,36 @@
+<ion-content no-bounce>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <a (click)="goToHomePage()">
+          <div class="back-icon">
+            <ion-icon name="arrow-back"></ion-icon>
+          </div>
+          <div id="homeDiv" class="back-text">Home</div>
+        </a>
+      </ion-col>
+      <ion-col col-4>
+        <div class="title">
+          <h4 id="vdetails">Vehicle Details</h4>
+        </div>
+      </ion-col>
+      <ion-col col-4></ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="vin-card">
+    <ion-card-content class="vin">
+      {{vehicleDetails.VIN}}
+    </ion-card-content>
+  </ion-card>
+  <div class="content">
+    <ion-list class="details-menu">
+      <button ion-item *ngFor="let item of menuItems" (click)="goToSelectedItem(item)">
+        <div class="item-title">
+          <ion-icon isActive="true" [name]="item.icon" [style.color]="item.color" [style.fontSize]="item.font" item-start></ion-icon>
+          {{item.title}}
+        </div>
+      </button>
+    </ion-list>
+  </div>
+
+</ion-content>

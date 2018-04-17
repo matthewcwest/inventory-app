@@ -1,0 +1,26 @@
+page-error {
+  ion-content {
+    background: -webkit-linear-gradient(rgb(239, 65, 50), rgb(145, 40, 31));
+  }
+  .warning-icon {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+  }
+  h1 {
+    color: white;
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+  h2 {
+    color: white;
+    font-size: 14pt;
+    text-align: center;
+    margin: 5px 10px 2px 10px;
+  }
+  .card-content {
+    background-color: rgb(163, 45, 34);
+  }
+}

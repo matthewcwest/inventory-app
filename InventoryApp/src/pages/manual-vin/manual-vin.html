@@ -1,0 +1,29 @@
+<ion-content no-bounce>
+  <div class="enter-vin">
+    <ion-item>
+      <ion-label color="primary" stacked>VIN:</ion-label>
+      <ion-label class="vin-label"><h4>Must be 17 characters long</h4></ion-label>
+      <ion-label class="vin-label"><h4>Cannot contain the letters "I, O, or Q"</h4></ion-label>
+      <ion-input [(ngModel)]="vehicleDetails.VIN"></ion-input>
+    </ion-item>
+  </div>
+  <div class="back" (click)="goToHomePage()">
+    <div class="back-icon">
+      <ion-icon name="md-arrow-round-down"></ion-icon>
+    </div>
+    <div class="back-text">Back to home</div>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-footer>
+    <ion-card class="card" (click)="enterVIN(vehicleDetails.VIN)">
+      <ion-card-content id="enterVIN" class="card-content">
+        ENTER VIN
+      </ion-card-content>
+    </ion-card>
+  </ion-footer>
+</ion-content>

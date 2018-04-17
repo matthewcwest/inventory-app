@@ -1,0 +1,38 @@
+<ion-content no-bounce>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <a (click)="goToHomePage()">
+          <div class="back-icon">
+            <ion-icon name="arrow-back"></ion-icon>
+          </div>
+          <div class="back-text">Home</div>
+        </a>
+      </ion-col>
+      <ion-col col-4>
+        <div class="title">
+          <h4>Vehicle Details</h4>
+        </div>
+      </ion-col>
+      <ion-col col-4></ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="vin-card">
+    <ion-card-content class="vin">
+      {{vin}}
+    </ion-card-content>
+  </ion-card>
+  <div class="inventory-icon">
+    <ion-icon name="md-checkmark-circle"></ion-icon>
+  </div>
+  <h1>{{pageDetails.title}}</h1>
+  <h2 id="desc">{{pageDetails.description}}</h2>
+  <h3>This screen will return to the <br/>scanner in {{secondsRemaining}} seconds.</h3>
+  <ion-footer>
+    <ion-card class="card" (click)="goToHomePage()">
+      <ion-card-content class="card-content">
+        SCAN ANOTHER VEHICLE
+      </ion-card-content>
+    </ion-card>
+  </ion-footer>
+</ion-content>

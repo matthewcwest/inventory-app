@@ -1,0 +1,87 @@
+ion-content {
+  background: -webkit-linear-gradient(rgb(12, 98, 212), rgb(8, 63, 136));
+}
+
+.card {
+  width: 100%;
+  margin: 0;
+}
+
+.card-content {
+  font-size: 12pt;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.grid{
+  padding: 0;
+  margin: 0;
+}
+.row{
+  padding: 0;
+  margin: 0;
+}
+.col{
+  padding: 0;
+  margin: 0;
+}
+
+.vin {
+  background-color: rgb(8, 63, 136);
+  color: white;
+  text-align: center;
+  font-size: 14pt;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.back-icon {
+  font-size: 22pt;
+  color: white;
+  text-decoration: none;
+  float: left;
+  padding-top: 0;
+  margin-top: 0;
+  padding-left: 10px;
+}
+
+.back-text {
+  font-size: 12pt;
+  color: white;
+  float: left;
+  padding-top: 2px;
+  margin-top: 0;
+  padding-left: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.vin-card {
+  border-radius: 4pt;
+  margin-left: 20px;
+  width: 89%;
+  margin-bottom: 20px;
+}
+
+h4 {
+  color: white;
+  font-size: 11pt;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 0;
+}
+
+.title {
+  text-align: center;
+  padding-top: 6px;
+}
+
+
